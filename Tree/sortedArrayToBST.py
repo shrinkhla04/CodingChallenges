@@ -17,6 +17,6 @@ class Solution:
 
         """This will be a height balanced tree as if there are odd numbers in the list then the left and right subtree will have equal number of digits"""
 
-        """In case of even numbers in the list the left subtree will have one more digit than in the right subtree""""
-
-print(Solution.sortedArrayToBST([-10,-3,0,5,9]))
+        """In case of even numbers in the list the left subtree will have one more digit than in the right subtree"""
+SolutionObject = Solution()
+print(SolutionObject.sortedArrayToBST([-10,-3,0,5,9]))
