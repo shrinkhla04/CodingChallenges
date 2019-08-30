@@ -15,4 +15,4 @@ class Solution:
         if root.right and root.val < val:
             return self.searchBST(root.right, val)
             
-#o(H) space and O(logn) time
+#O(H) space and O(H) time
