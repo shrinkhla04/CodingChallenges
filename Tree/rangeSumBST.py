@@ -17,3 +17,4 @@ class Solution:
             self.rangeSumBST(root.right, L, R)
         return self.range_sum
             
+#O(n) time and O(H) space
