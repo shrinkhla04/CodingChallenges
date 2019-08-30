@@ -16,5 +16,4 @@ class Solution:
         if root.right and R > root.val:
             self.rangeSumBST(root.right, L, R)
         return self.range_sum
-            
 #O(n) time and O(H) space
