@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+
+
 class Node:
     def __init__(self, val, children):
         self.val = val
