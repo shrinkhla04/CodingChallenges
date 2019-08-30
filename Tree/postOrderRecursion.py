@@ -14,4 +14,5 @@ class Solution:
                 self.postorder(i)
             self.post_order_list.append(root.val)
         return self.post_order_list
+
 #O(n) time and O(H) space
