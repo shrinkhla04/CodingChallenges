@@ -7,6 +7,7 @@ class Node:
         self.val = val
         self.children = children
 
+#using oreorder traversal
 class Solution:    
     def isUnivalTree(self, root: TreeNode) -> bool:
         self.root_val = root.val
@@ -16,7 +17,6 @@ class Solution:
     def preorder(self,root):
         if root:
             if root.val != self.root_val:
-                print("yes")
                 return False
         return self.preorder(root.left) and self.preorder(root.right)
         
