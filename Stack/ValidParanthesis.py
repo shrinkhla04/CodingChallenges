@@ -1,14 +1,14 @@
 
-https://leetcode.com/problems/valid-parentheses/
+#https://leetcode.com/problems/valid-parentheses/
 
 class Solution:
     def isValid(self, s: str) -> bool:
         stack=[]
-        dictionary ={')':'(','}':'{',']':'['}
+        dictionary ={')':'(','}':'{',']':'['} #O(1) space
         """opening brackets are stored as values so that they can be retrieved for comparison 
         with the last element of the stack"""
         for i in s:
-            if i in dictionary.values(): 
+            if i not in dictionary : 
                 stack.append(i)
             else:
                 if not stack or stack.pop() != dictionary[i]: 
@@ -24,4 +24,5 @@ class Solution:
         correct order with the closing brackets"""
 
 
-# O(n) time and O(n) space
+# O(n) time for iterating over the input string 
+# O(n) space in worst case when the input string has all opening brackets
