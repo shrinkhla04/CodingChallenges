@@ -60,10 +60,8 @@ class Solution:
                 if i % j == 0:
                     string_representation[i-1] += hash_table[j]
             if string_representation[i - 1] == "":
-                string_representation[i - 1] = str(i)
-                    
-            
+                string_representation[i - 1] = str(i)                      
         return string_representation
                 
-#O(n) time and O(1) space
+#O(n) time as for every n we are checking iterating over constant number of keys equal to the number of mapping so that is cosidered constant and O(1) space
 
