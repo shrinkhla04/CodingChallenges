@@ -11,7 +11,6 @@ public class PathSum {
             return sum == 0;
         }
         return hasPathSum(root.left, sum) || hasPathSum(root.right, sum);
-
     }
 
     public static void main(String[] args){
